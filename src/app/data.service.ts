@@ -21,7 +21,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
   getContactData(): Observable<Contact[]> {
-    return this.http.get<Contact[]>("http://bhagscbook.herokuapp.com/contacts");
+    return this.http.get<Contact[]>("https://bhagscbook.herokuapp.com/contacts");
 
   }
 }
